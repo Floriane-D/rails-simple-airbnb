@@ -1,6 +1,11 @@
 h1 {
-  font-size: 20px
+  font-size: 25px;
 }
+
+h2 {
+  font-size: 20px;
+}
+
 .container {
   padding: 10px;
 }
@@ -34,6 +39,10 @@ h1 {
   padding: 10px;
 }
 
+.card-body h1 {
+  color: #696969;
+}
+
 .card-footer {
   display:flex;
   justify-content: space-between;
@@ -42,7 +51,7 @@ h1 {
   color: #d3d3d3;
 }
 
-.card-footer a {
+a {
   text-decoration: none;
   padding: 10px;
   color: #d3d3d3;
@@ -50,4 +59,14 @@ h1 {
 
 .fa {
   display: inline-block;
+}
+
+.button-add {
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  padding: 10px;
+}
+
+.button-add a {
+  color: #696969;
 }

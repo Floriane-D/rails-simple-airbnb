@@ -1,1 +1,16 @@
-
+<div class="container">
+  <div class="cards">
+    <div class="card">
+      <div class="card-body">
+        <h3><%= @flat.name %></h3>
+        <p><%= @flat.address %></p>
+        <p><%= @flat.description %></p>
+        <span class = "info"><i class="fas fa-euro-sign"></i><%= @flat.price_per_night %></span>
+        <span class = "info"><i class="fas fa-users"></i><%= @flat.number_of_guests %></span>
+      </div>
+      <div class="card-footer">
+        <%= link_to "Back to all flats", flats_path, class: "btn btn-primary"%>
+      </div>
+    </div>
+  </div>
+</div>
