@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+
+<div class="container">
+  <h2 class="text-center">All our flats</h2>
+  <div class="cards">
+    <% @flats.each do |flat| %>
+      <div class="card">
+        <div class="card-body">
+          <h1><%= flat.name %></h1>
+          <p><%= flat.address %></p>
+          <span class = "info"><i class="fas fa-euro-sign"></i><%= flat.price_per_night %></span>
+          <span class = "info"><i class="fas fa-users"></i><%= flat.number_of_guests %></span>
+        </div>
+        <div class="card-footer">
+          <%= link_to "See details", flat_path(flat), class: "btn btn-primary"%>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
